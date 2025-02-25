@@ -1,0 +1,197 @@
+html{
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+ #LndPg_navbar{
+    width: 100%;
+    font-size: 15px;
+    position:fixed;
+    overflow:hidden;
+    background-color: #0e0e0e;
+    z-index: 1000;
+}
+
+
+.LndPg_navBarContainer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+}
+.LndPg_Logo img{
+ height: 60px;
+}
+
+
+.LndPg_navlinks{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.LndPg_navlinks li{
+  display: inline;
+}
+
+.LndPg_navlinks a{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+  transition:color .3s;
+}
+
+.LndPg_navlinks a:hover{
+  color: #E50914;
+}
+.LndPg_navbar_btn_GFQ {
+  background-color: #1153ff;
+  color: whitesmoke;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+ 
+}
+.LndPg_navbar_btn_GFQ:hover {
+  background-color: #E50914;
+}
+
+.LndPg_navbarRight{
+  display:flex;
+  align-items: center;
+  gap: 20px;
+}
+body {
+  display: block; /* Ensures sections stack vertically */
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  margin: 0;
+}
+
+section {
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: whitesmoke;
+  text-align: center;
+  width: 100vw; /* Ensures section takes full viewport width */
+  flex-direction: column; /* Ensures content stacks inside each section */
+}
+ 
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure the video covers the entire area */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.video-container {
+  position: relative; /* Needed for absolute positioning of children */
+  width: 100%;
+  max-width: 100vw;
+  height: 100vh; /* Adjust this if needed */
+  overflow: hidden;
+}
+
+.LndPg_Hero  {
+  position: absolute;
+  font-family: 'Hammersmith One', sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%); 
+  z-index: 3; /* Ensures it's above the video */
+  text-align: justify;
+  color: white; /* Makes the text visible on the video */
+  padding: 80px;
+ 
+}
+
+.LndPg_Hero h1 {
+  margin: 0; /* Removes extra margin */
+  font-size: 2.5rem;
+  line-height: 1.2; /* Adjusts spacing between lines */
+  text-align: justify;
+}
+
+
+.LndPg_OpacityBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.674); /* Adjust transparency */
+  z-index: 2;
+}
+ 
+.LndPg_Hero span{
+  color: #E50914;
+}
+
+
+.LndPg_Hero p{
+  font-size: 18px;
+  font-family: "Inter", serif;
+  margin: 5px 0; /* Reduces gap between the heading and paragraph */
+  font-size: 1.2rem;
+  line-height: 1.5; /* Ensures good readability */
+  text-align: justify;
+}
+
+
+
+
+
+ 
+/* 
+#LndPg_navbar a{
+display: flex;
+color:whitesmoke;
+padding:15px;
+text-decoration: none;
+
+}
+
+#LndPg_navbar a:hover{
+ 
+color: #E50914;
+border-radius: 3px;
+}
+
+.LndPg_navbar_btn_GFQ{
+    font-family:'Hammersmith One', sans-serif;
+    display: flex;
+    padding: 16px 25px;
+    background-color: #1153ff;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.LndPg_navbar_btn_GFQ:hover{
+background-color: #E50914;
+color:whitesmoke ;
+
+}
+ 
+  
+  #LndPg_navbar_Logo{
+    float:left;
+  }
+ 
+
+   */
