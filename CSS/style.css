@@ -1,4 +1,6 @@
 html{
+  margin:0;
+  padding:0;
   scroll-behavior: smooth;
   overflow-y: scroll;
 }
@@ -79,13 +81,11 @@ body {
 section {
   height: 100vh; /* Full screen height */
   display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 2rem;
   color: whitesmoke;
   text-align: center;
   width: 100vw; /* Ensures section takes full viewport width */
-  flex-direction: column; /* Ensures content stacks inside each section */
+  position: relative;
 }
  
 video {
@@ -112,7 +112,7 @@ video {
   left: 50%;
   transform: translate(-75%, -50%); 
   z-index: 3; /* Ensures it's above the video */
-  text-align: justify;
+  text-align: left;
   color: white; /* Makes the text visible on the video */
   padding: 80px;
  
@@ -120,9 +120,9 @@ video {
 
 .LndPg_Hero h1 {
   margin: 0; /* Removes extra margin */
-  font-size: 2.5rem;
+  font-size: 40px;
   line-height: 1.2; /* Adjusts spacing between lines */
-  text-align: justify;
+ 
 }
 
 
@@ -141,57 +141,124 @@ video {
 }
 
 
-.LndPg_Hero p{
-  font-size: 18px;
+.LndPg_Hero pre{
+  font-size: 10px;
   font-family: "Inter", serif;
-  margin: 5px 0; /* Reduces gap between the heading and paragraph */
-  font-size: 1.2rem;
-  line-height: 1.5; /* Ensures good readability */
-  text-align: justify;
+  margin-top: 10px ;  
+  text-align: left;
+  margin: 0 auto; 
 }
 
 
-
-
-
- 
-/* 
-#LndPg_navbar a{
-display: flex;
-color:whitesmoke;
-padding:15px;
-text-decoration: none;
-
+.LndPg_Button_Strt_Prjct{
+  padding-top: 30px;
 }
 
-#LndPg_navbar a:hover{
- 
-color: #E50914;
-border-radius: 3px;
+.LndPg_ClientNumbers{
+  padding-top: 10px;
+  font-size: 40px;
+  font-family: "Inter", serif;
 }
 
-.LndPg_navbar_btn_GFQ{
-    font-family:'Hammersmith One', sans-serif;
-    display: flex;
-    padding: 16px 25px;
-    background-color: #1153ff;
-    color: whitesmoke;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-left: 5px;
+
+#Services{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the top */
+  justify-content: flex-start; /* Ensures items start at the top */
+  height: 100vh;
+  position: relative;
+  background-color: #0e0e0e;
 }
 
-.LndPg_navbar_btn_GFQ:hover{
-background-color: #E50914;
-color:whitesmoke ;
+/*start ng code para sa carousel*/
 
+.carousel-container {
+
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Change from fixed to relative */
 }
- 
+
+.carousel {
+  display: flex;
+  gap: 70px;
+  width: max-content;
+  animation: scrollCarousel 10s linear infinite;
+}
+
+.carousel img {
+  display: flex;
+  width: 50px; 
+  height: 50px;
   
-  #LndPg_navbar_Logo{
-    float:left;
-  }
  
+}
 
-   */
+/* Keyframe animation for smooth scrolling */
+@keyframes scrollCarousel {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.carousel-container:hover .carousel {
+  animation-play-state: paused;
+}
+
+
+
+
+.Srvc_Page_Details{
+  position: absolute;
+  font-family: 'Hammersmith One', sans-serif;
+  top: 50%;
+  right: -25%;
+  transform: translate(-75%, -50%); 
+  z-index: 3; /* Ensures it's above the video */
+  text-align: left;
+  color: white; /* Makes the text visible on the video */
+  padding: 80px;
+ 
+}
+ 
+.Srvc_Page_Details h1{
+ font-family: 'Inter',sans-serif;
+ font-size: 24px;
+ color:#E50914;
+
+}
+
+.Srvc_Page_Details span{
+  font-family: 'Inter',sans-serif;
+  color:white;
+  font-size: 40px;
+}
+
+
+.Srvc_Page_Image {
+  position: absolute;  /* Aligns with .Srvc_Page_Details */
+  top: 50%;  /* Centers vertically */
+  left: 25%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Ensures perfect centering */
+  z-index: 2; /* Places it below .Srvc_Page_Details */
+}
+.Srvc_Page_Details pre{
+  margin-top: 30px;
+  font-size: 10px;
+  font-weight: lighter;
+}
+.Srvc_Page_Image img{
+ 
+  height: auto;
+  width: 50%;
+}
+
+
+
