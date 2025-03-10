@@ -262,3 +262,97 @@ video {
 
 
 
+#Portfolio{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  background-color: #0e0e0e;
+
+}
+
+#Portfolio h1{
+  color: #E50914;
+  font-size: 24px;
+  font-family: 'Inter',sans-serif;
+}
+
+#Portfolio h2{
+ 
+  font-size: 48px;
+  font-family: 'Inter',sans-serif;
+}
+
+#Portfolio p{
+ 
+  font-size: 15px;
+  font-family: 'Inter',sans-serif;
+}
+
+.Pfl_MainContainer{
+  padding-top: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+ 
+}
+
+.Pfl_SubCon1{
+display: flex;
+align-items: center;
+justify-items: center;
+}
+.Pfl_SubCon1 img{
+  width: 250px;
+  height: 300px;
+  display: flex;
+  align-items: center; 
+}
+
+
+#Service_continuation{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  background-color: #0e0e0e;
+
+}
+
+#Service_continuation h1{
+  color: #E50914;
+  font-size: 24px;
+  font-family: 'Inter',sans-serif;
+}
+
+#Service_continuation h2{
+ 
+  font-size: 48px;
+  font-family: 'Inter',sans-serif;
+}
+
+#Service_continuation p{
+ 
+  font-size: 15px;
+  font-family: 'Inter',sans-serif;
+}
+
+.Pfl_Description{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position:relative;
+  background-color: #0e0e0e;
+}
+.Pfl_Description img{
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+
+}
