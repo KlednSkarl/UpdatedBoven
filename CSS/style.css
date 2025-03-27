@@ -83,11 +83,10 @@ html{
   }
   
   section {
-    height: 100vh; /* Full screen height */
+ 
     display: flex;
     font-size: 2rem;
     color: whitesmoke;
-    
     width: 100vw; /* Ensures section takes full viewport width */
     position: relative;
   }
@@ -420,8 +419,9 @@ padding: 10px;
 .card_holder{
   display: flex;
   width: 100%;
-  height: 500px;
+  height: fit-content;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .card {
@@ -438,12 +438,12 @@ padding: 10px;
 
 .left-section img {
   width: 300px;
- 
+  height: 350px;
   object-fit: contain;
 }
 
 .right-section{
- padding-top: 50px;
+ padding-top: 30px;
  display: flex;
  flex-direction: column;
  align-items: flex-start;
@@ -489,12 +489,122 @@ padding: 10px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
+   
   align-self: flex-end;
   margin-top: 30px;
  
 }
 
+.view-all-container {
+  width: 800px;           /* same width as your .card */
+  margin: 50px auto 0;    /* centers the container on the page */
+  display: flex;
+  justify-content: flex-end; /* aligns content (the button) to the right */
+}
+
+.btn_ViewAll{ 
+  display: flex;
+  align-self: flex-end;
+  background-color: #2563eb;
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
 .view-btn:hover {
   background-color: #E50914;
+}
+.btn_ViewAll:hover{
+  background-color:#E50914;
+}
+
+#About{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#About h1{
+  margin-top: 20px;
+  font-family: 'Inter',sans-serif;
+  font-size: 20px;
+  color:#E50914;
+  text-align: center;
+}
+#About h2{
+  font-family: 'Inter',sans-serif;
+  font-size: 30px;
+  color:aliceblue;
+  text-align: center;
+}
+#About p{
+  font-family: 'Inter',sans-serif;
+  font-size: 10px;
+  color:aliceblue;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.ABT_Clnt_Holder_1{
+display: flex;
+padding: 20px;
+align-self: center;
+flex-direction: column;
+width: 200px;
+height: 300px;
+
+}
+.ABT_DivClnt1_logo{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ABT_DivClnt1{
+display: flex;
+margin: 0;
+padding: 0;
+align-self: center;
+flex-direction: column;
+width: 200px;
+height: 300px;
+}
+
+
+#About .ABT_DivClnt1 .imgCust{
+  height: 30px;
+  width: 100px;
+}
+
+ #About .ABT_Clnt_Holder_1 .ABT_DivClnt1_logo h1{
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+#About .ABT_Clnt_Holder_1 .ABT_DivClnt1_logo span{
+  font-weight: bold;
+  font-size: 20px;
+  color:#E50914;
+}
+#About .ABT_Clnt_Holder_1 .ABT_DivClnt1_logo p{
+  font-size: 10px;
+  justify-content: left;
+}
+.spansilog{
+  color:#E50914;
+}
+
+#About .ABT_Clnt_Holder_1  .imgCust {
+  display: flex;
+  height: 30px;
+  width: 100px;
+  align-self: center;
+}
+.ABT_CARDVIEW_CARRIER{
+  display:flex;
+  flex-direction: row;
+  align-self: center;
 }
